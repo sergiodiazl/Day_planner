@@ -1,6 +1,6 @@
-This calendar was made with react.The only third party library was momentJs for dates.State was managed with the context api.The style is plain css,I wanted to use Styled components but iwent for a simpler style for time reasons.
+This calendar was made with react.The only third party library was momentJs for dates.State was managed with the context api.The style is plain css,I wanted to use Styled components but  I went for a simpler style for time reasons.
 
-To run it download it,then use the Yarn install to install dependencies and yarn start to run locally in dev mode
+To run it download the repo ,then use the Yarn install to install dependencies and yarn start to run locally in dev mode.
 
  Features
 ● Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also,
@@ -32,6 +32,6 @@ Notes
 ● you can delete indiviual taks or all the taks for a given day click on its respective button
 ●its common recommended practice to use an env file containing api keys and passwords but i coded it in the component for the tester convenience
 ●scroll for cells with multiple tasks
-●I used the forecast of the curent day because i couldnt find a simple way to easily access past forecasts or ones far in the future
+●I used the forecast of the curent day because i didnt find an endpoint for forecasts in specific dates
 ●I couldnt spend as much time as i wanted with the task,couldnt make a good mobile view
 ●IF the city doesnt exist or there is a problem with the weather api the forecast will be "not available"
