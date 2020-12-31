@@ -1,0 +1,54 @@
+.task{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.black{
+    color:black;
+}
+.red{
+    color:#8a1212;
+}
+
+.green{
+    color:#275f27;
+}
+.task-info{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.task-main{
+    font-size: 1.2rem;
+    
+}
+.task-description{
+    font-size: 1.4rem;
+    width: 100%;
+}
+.btn-wrapper{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-btn{
+   width:40%;
+    border:none;
+ border-radius: 5px;
+ cursor:pointer;
+ 
+ box-shadow: 0 1px 3px 0 #4c4949;
+}
+
+.delete-btn{
+
+    background:#8a1212; 
+    color:#FFFFFF;
+}
+.edit-btn{
+    color:#FFFFFF;
+    background: lightseagreen;
+}

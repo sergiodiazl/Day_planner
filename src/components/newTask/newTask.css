@@ -1,0 +1,68 @@
+.new-task-form {
+  background: #fff;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1%;
+  border-radius: 5px;
+
+  box-shadow: 0 0 15px 0 #c0c0c0;
+}
+.new-task-form h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+.new-task-form label {
+  font-size: 1.5rem;
+}
+.new-task-fields {
+  width: 100%;
+}
+.single-input {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+.single-input input {
+  width: 100%;
+}
+.input-group .single-input {
+  padding: 0;
+}
+.radio-group,
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.input-group {
+  padding: 1%;
+}
+.radio-group {
+  padding: 0;
+}
+.city input,
+.description input {
+  width: 100%;
+}
+.color-wrapper {
+  padding: 1%;
+}
+.new-task-btn {
+  display: block;
+  color: #fff;
+  background: green;
+  width: 100%;
+  border: none;
+  padding: 1%;
+  border-radius: 5px;
+
+  box-shadow: 0 1px 3px 0 #4c4949;
+}

@@ -1,0 +1,31 @@
+.day-summary-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width:100%
+}
+.day-summary{
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+}
+.day-number{
+    font-size:1.5em;
+    font-weight:bold;
+}
+.weekend{
+    color:rebeccapurple;
+}
+.day.different-month .weekend {
+    color: #c0c0c0;
+  }
+.delete-all-btn{
+    padding:1%;
+    width:40%;
+     border:none;
+  border-radius: 5px;
+  cursor:pointer;
+    background:#8a1212; 
+    color:#FFFFFF;
+    
+ box-shadow:0 1px 3px 0 #4c4949;
+}

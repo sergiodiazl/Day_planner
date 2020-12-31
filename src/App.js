@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
 
+import moment from'moment'
+
+import Calendar from './components/calendar'
+import { AppContextProvider } from './appContext';
+import EditTask from './components/editTask';
+import NewTask from './components/newTask';
 function App() {
+const[month,setMonth]=useState(moment())
+const[selectedDay,setSelectedDay]=useState(moment().startOf('day'))
+const[selectedTask,setSelectedTask]=useState(null)
+const[tasks,setTasks]=useState({})
+const[showEdit,setShowEdit]=useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContextProvider value={{month,setMonth,selectedDay,setSelectedDay,tasks,setTasks,selectedTask,setSelectedTask,showEdit,setShowEdit}}>
+    <Calendar/>
+    {showEdit?<EditTask/>:<NewTask/>}
+</AppContextProvider>
   );
 }
 
